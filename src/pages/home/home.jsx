@@ -4,6 +4,7 @@ import cat1 from "../../assets/img/cat1.png";
 import "./home.css";
 import { Link } from "react-router-dom";
 import config from "../../config";
+
 export const Home = () => {
   return (
     <div className="home_box">
@@ -14,7 +15,6 @@ export const Home = () => {
         <Link to={config.routes.quizz}>
           <Button
             btnName="Start"
-            handleClick={() => {}}
           />
         </Link>
       </div>

@@ -1,34 +1,29 @@
 import React, { useState, useEffect } from "react";
 import Cart from "../../components/Card/Cart";
 import "./Quiz.css";
+import * as loadQuestions from "../../services/loadQuestions"
 
-import axios from "axios";
+function Quizz() {
+  const [loadValue, setLoadValue] = useState(10)
+  const [question, setQuestion] = useState([])
 
-const Quiz = () => {
-  const [questions, setQuestions] = useState([]);
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const [score, setScore] = useState(0);
+  //load questions
+  const fetchApi = async () => {
+    const result = await loadQuestions.load(loadValue)
+    setQuestion(result)
+  }
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          "https://opentdb.com/api.php?amount=10"
-        );
-        setQuestions(response.data.results);
-      } catch (error) {
-        console.log(error);
-      }
-    };
+  console.log(loadValue);
 
-    fetchData();
-  }, []);
-  const currentQuestionData = questions[currentQuestion];
+  fetchApi()
+
+  console.log(question);
+
   return (
     <div className="quizz_box">
-      <Cart data={currentQuestionData}/>
+      <Cart />
     </div>
   );
 };
 
-export default Quiz;
+export default Quizz;

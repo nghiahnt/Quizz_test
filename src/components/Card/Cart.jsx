@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from "react";
 import Button from "../../components/Button/Button";
 import "./Cart.css";
-const Cart = (currentQuestionData) => {
-  const [selectedOption, setSelectedOption] = useState("");
-  const handleOptionChange = (event) => {
-    setSelectedOption(event.target.value);
-  };
+
+const Cart = () => {
+
+  // const [selectedOption, setSelectedOption] = useState("");
+
+  // const handleOptionChange = (event) => {
+  //   setSelectedOption(event.target.value);
+  // };
+
   return (
     <div>
       <div className="quizz_box_title">
         <h4>Question 1/10</h4>
-        <p>{currentQuestionData[0].questions}</p>
+        <p>Test Question</p>
         <ul>
           <li>
             <label htmlFor="option1">Option 1</label>
@@ -20,8 +24,8 @@ const Cart = (currentQuestionData) => {
               name="options"
               value="option1"
               className="check_box"
-              checked={selectedOption === "option1"}
-              onChange={handleOptionChange}
+              // checked={selectedOption === "option1"}
+              // onChange={handleOptionChange}
             />
           </li>
           <li>
@@ -32,8 +36,8 @@ const Cart = (currentQuestionData) => {
               id="option2"
               name="options"
               value="option2"
-              checked={selectedOption === "option2"}
-              onChange={handleOptionChange}
+              // checked={selectedOption === "option2"}
+              // onChange={handleOptionChange}
             />
           </li>
           <li>
@@ -44,8 +48,8 @@ const Cart = (currentQuestionData) => {
               className="check_box"
               name="options"
               value="option3"
-              checked={selectedOption === "option3"}
-              onChange={handleOptionChange}
+              // checked={selectedOption === "option3"}
+              // onChange={handleOptionChange}
             />
           </li>
           <li>
@@ -56,8 +60,8 @@ const Cart = (currentQuestionData) => {
               id="option4"
               name="options"
               value="option4"
-              checked={selectedOption === "option4"}
-              onChange={handleOptionChange}
+              // checked={selectedOption === "option4"}
+              // onChange={handleOptionChange}
             />
           </li>
         </ul>
