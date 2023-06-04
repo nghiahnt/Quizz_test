@@ -1,19 +1,16 @@
-import React, { useState } from "react";
-import "./Quiz.css";
+import React, { useState, useEffect } from "react";
 import Button from "../../components/Button/Button";
-
-const Quiz = () => {
+import "./Cart.css";
+const Cart = (currentQuestionData) => {
   const [selectedOption, setSelectedOption] = useState("");
-
   const handleOptionChange = (event) => {
     setSelectedOption(event.target.value);
   };
-
   return (
-    <div className="quizz_box">
+    <div>
       <div className="quizz_box_title">
         <h4>Question 1/10</h4>
-        <p>In any programming language, what is...?</p>
+        <p>{currentQuestionData[0].questions}</p>
         <ul>
           <li>
             <label htmlFor="option1">Option 1</label>
@@ -72,4 +69,4 @@ const Quiz = () => {
   );
 };
 
-export default Quiz;
+export default Cart;

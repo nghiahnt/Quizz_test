@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Button from "../../components/Button/Button";
 import cat1 from "../../assets/img/cat1.png";
 import "./Pass.css";
+
 const Pass = () => {
   return (
     <div className="pass_box">
       <div className="pass_box_image">
-        <img src={cat1} alt="cat"/>
+        <img src={cat1} alt="cat" />
       </div>
       <div className="pass_box_font">
         <h4>Congratulations!</h4>
@@ -14,7 +15,7 @@ const Pass = () => {
         <span>5/10 correct answers in 35 seconds</span>
       </div>
       <div className="pass_box_Button">
-        <Button btnName="Play Again" handleClick={()=>{}}/>
+        <Button btnName="Play Again" handleClick={() => {}} />
       </div>
     </div>
   );
