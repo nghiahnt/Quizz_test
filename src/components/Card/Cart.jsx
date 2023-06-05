@@ -2,19 +2,23 @@ import React, { useState, useEffect } from "react";
 import Button from "../../components/Button/Button";
 import "./Cart.css";
 
-const Cart = () => {
+const Cart = (questions) => {
 
   // const [selectedOption, setSelectedOption] = useState("");
 
   // const handleOptionChange = (event) => {
   //   setSelectedOption(event.target.value);
   // };
+  // useEffect(()=>{
+  //   console.log(questions);
+  // },[]);
+ 
 
   return (
     <div>
       <div className="quizz_box_title">
         <h4>Question 1/10</h4>
-        <p>Test Question</p>
+        <p>{questions[0]}</p>
         <ul>
           <li>
             <label htmlFor="option1">Option 1</label>
