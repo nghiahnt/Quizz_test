@@ -1,7 +1,8 @@
 const routes = {
     home:'/',
     quizz:'quizz',
-    pass:'pass'
+    pass:'pass',
+    review:'review',
 }
 
 export default routes;

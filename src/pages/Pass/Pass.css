@@ -8,12 +8,15 @@ img {
     margin-top: 2rem;
     border-radius: 50%;
 }
-
+.box_pass_top{
+    position: relative;
+}
 .pass_box {
     height: 17rem;
     width: 17rem;
     background-color: #fff;
     border-radius: 1rem;
+    display: grid;
     /* justify-content: center; */
     /* align-items: center; */
     margin: auto;
@@ -36,7 +39,12 @@ h4{
 
 .pass_box_Button {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding-top: 1.1rem;
+}
+span{
+    display: block;
+    text-align: center;
+    line-height: 1rem;
 }
