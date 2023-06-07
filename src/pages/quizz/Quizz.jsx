@@ -43,6 +43,7 @@ function Quizz() {
     }, 1000);
     return () => clearInterval(interval);
   }, []);
+  
   const handleAnswer = (answer) => {
     if (!answerSelected) {
       setAnswerSelected(true);

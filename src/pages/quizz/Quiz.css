@@ -99,6 +99,7 @@ p.quiz_question_box {
   color: #fff;
   padding: 0.5rem 0.5rem;
   font-weight: 400;
+  margin: 0px 10px 8px 10px;
 }
 
 .quiz-container {
@@ -204,4 +205,10 @@ p.title_qiz_ask {
 button:focus, button:active {
   outline: none;
   border: none;
+}
+
+.quiz_answer_box {
+  margin-left: 12px;
+  margin-right: 12px;
+  margin-top: 20px;
 }

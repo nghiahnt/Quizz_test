@@ -6,7 +6,7 @@ function App() {
   return (
     <Router>
       <div className="green_box">
-        <Routes>
+        <Routes className='page'>
           {publicRoutes.map((route, index) => {
             const Page = route.component;
             return <Route key={index} path={route.path} element={<Page />} />;
