@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import Button from "../../components/Button/Button";
-import cat1 from "../../assets/img/cat1.png";
-import cat2 from "../../assets/img/cat2.png";
+import quizz from "../../assets/img/quizz.jpg";
+import quizz2 from "../../assets/img/quizz2.jpg";
 import "./Pass.css";
 import { QuizContext } from "../../components/QuizzContext/quizzUseContext";
 import { Link } from "react-router-dom";
@@ -31,7 +31,7 @@ const Pass = () => {
         {score >= 5 ? (
           <div>
             <div className="pass_box_image">
-              <img src={cat1} alt="cat" />
+              <img src={quizz} alt="cat" />
             </div>
             <div className="pass_box_font">
               <h4>Congratulations!</h4>
@@ -52,7 +52,7 @@ const Pass = () => {
         ) : (
           <div>
             <div className="pass_box_image">
-              <img src={cat2} alt="cat" />
+              <img src={quizz2} alt="cat" />
             </div>
             <div className="pass_box_font">
               <h4>Completed!</h4>

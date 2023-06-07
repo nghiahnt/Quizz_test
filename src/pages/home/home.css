@@ -5,7 +5,7 @@
     border-radius: 50rem;
 }
 .button_home{
-    margin-top: 1rem;
+    margin-top: 10px;
 }
 .box {
     display: flex;
@@ -13,8 +13,6 @@
     align-items: center;
 }
 
-.home-btn {
-    background-color: red;
-    text-align: center;
-
+.btn-home {
+    color: red;
 }
